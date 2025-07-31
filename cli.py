@@ -49,7 +49,7 @@ def main():
     history = run_experiment(args, train_loader)
 
     if args.title is None:
-        args.title = f"mode={args.g_mode} x d={args.d} x N={args.N}"
+        args.title = f"{args.g_mode}_{args.d}_{args.N}"
 
     # Save history (as json) and plots
     print('Saving plots')

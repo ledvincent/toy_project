@@ -42,7 +42,9 @@ def plot_loss(history, args):
     ax.set_yscale('log')
     ax.set_xlabel('Epochs')
     ax.set_ylabel('MSE')
-    ax.set_title(f"Comparison of models for {title}")
+    value_definition = ['Mode: ', ' d: ', ' N: ']
+    graph_title = "".join([value_definition[i] + v for i, v in enumerate(title.split('_'))])
+    ax.set_title(f"Comparison of models for {graph_title}")
     
     plt.legend()
     plt.tight_layout()
