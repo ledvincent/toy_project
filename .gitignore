@@ -1,0 +1,11 @@
+# ─── Ignore training artefacts ───────────────────────────────
+results/
+*.png
+*.json
+scripts.txt
+
+# (optional) Python boilerplate
+__pycache__/
+*.pyc
+.env
+.venv
